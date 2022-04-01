@@ -20,6 +20,8 @@ train_4x4.py: Training code for RL agent in second set of experiments (goes with
 data/hyperparams_<rules>.pkl: Hyperparameters for a particular task distribution. Add "_null" to use the metamer distribution. 
   
 data/<rules>_sample.npy | data/<rules>_sample_starts.npy: Held-out test set for each task distribution (and the start tile location). Used in human experiments as well. 
+
+data/gsp_4x4_full.npy | data/gsp_4x4_full_probs.npy: Boards produced from GSP experiments and their counts (how much they occured in the chain). 
   
 data/performancedata.csv: Behavioral data of human and agent performance across all conditions (all abstractions, metamer/abstract conditions)
   
