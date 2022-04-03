@@ -1,7 +1,7 @@
 # Abstract_Neural_Metamers
 Code and Data for paper "Disentangling Abstraction from Statistical Pattern Matching in Human and Machine Learning" (under review). 
 
-This is the initial version that contains for generating abstract task distributions, building metamer task distributions, training the RL agents, and behavioral data (see notes in each file for more information). The next version will contain more extensive documentation on use and cleaner more user friendly code. Code for a paper with preliminary findings that uses a lot of the same methods is available here: https://github.com/sreejank/structured_metarl 
+This is the initial version that contains for generating abstract task distributions, building metamer task distributions, training the RL agents, and behavioral data (see notes in each file for more information). The next version will contain more extensive documentation on use and cleaner more user friendly code. Code for a paper with preliminary findings that uses a lot of the same methods is available here: https://github.com/sreejank/Compositional_MetaRL. 
 
 Current files:
 
