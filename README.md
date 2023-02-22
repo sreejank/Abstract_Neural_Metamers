@@ -11,11 +11,23 @@ metamer_distribution_generator.py: Generating metamer task distributions
 
 small_env.py: Grid training enviornment for RL agent (first set of experiments that use the eight chosen abstractions)
 
-small_env_4x4.py: Grid training enviornment for RL agent (second set of experiments that use the data-driven Gibbs Sampling with People abstract task distribution)
+episodic_env.py: Same grid training environment, but keeps track of a memory buffer (n prev timesteps) for the Episodic Planning Network agent 
 
-train.py: Training code for RL agent in first set of experiments (goes with small_env.py)
+train.py: Training code for Recurrent Meta-RL agent in first set of experiments (goes with small_env.py)
 
-train_4x4.py: Training code for RL agent in second set of experiments (goes with small_env_4x4.py)
+train_epn.py: Training code for EPN agent in (goes with episodic_env.py)
+
+train_corelnet2.py: Training code for CorelNet agent. 
+
+train_transformer.py: Training code for Transformer Agent. 
+
+epn_policy.py: Implementation of EPN agent
+
+vit_policy.py: Implementation of Transformer agent
+
+corelnet_policy.py: Implementation of CorelNet agent. 
+
+vit.py: Helper class for Transformer agent (implementation of self-attention)
 
 data/hyperparams_<rules>.pkl: Hyperparameters for a particular task distribution. Add "_null" to use the metamer distribution. 
   
@@ -24,4 +36,5 @@ data/<rules>_sample.npy | data/<rules>_sample_starts.npy: Held-out test set for 
 data/gsp_4x4_full.npy | data/gsp_4x4_full_probs.npy: Boards produced from GSP experiments and their counts (how much they occured in the chain). 
   
 data/performancedata.csv: Behavioral data of human and agent performance across all conditions (all abstractions, metamer/abstract conditions)
-  
+
+
